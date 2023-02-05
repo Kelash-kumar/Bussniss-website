@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML basics tags </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+   .card{
+    border: 0px solid firebrick;
+    /* background: rgb(182, 21, 21); */
+    width: 200px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px;
+perspective: 500px;
+position:absolute;   
+}
+.contain{
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    position:absolute;   
+    transform-style: preserve-3d;   
+}
+
+.card:hover .contain{
+transform:rotateY(180deg);
+}
+
+   .front, .back{
+    width: 100%;
+    height: 100%;
+    color: aqua;
+    text-align: center;
+    font-size: 50px;
+    background-color: darkorange;
+    right: 80px;
+    border-radius: 10px;
+    position:absolute;
+    backface-visibility: hidden;
+   }
+.back{
+    background-color: darkorange;
+    color: blue;
+    transform:rotateY(180deg);
+}
+
+</style>
+</head>
+<body>
+    <!-- <h1>html basics tags and its uses </h1>
+<table border="1" cellspacing="0">
+    <tr>
+        <th rowspan="3">Day</th>
+        <th colspan="5">Seminar</th>
+    </tr>
+    <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2"  >Topic</th>
+        
+    </tr>
+    <tr>
+        <th>Begin</th>
+        <th>End</th>
+    </tr>
+    <tr >
+        <td rowspan="3">Monday</td>
+        <td rowspan="3">8:10 am</td>
+        <td rowspan="3">5:00 pm</td>
+        <td>Introduction to HTML</td>
+    </tr>
+    <td >validity DTD</td>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowspan="3">Tuesday</td>
+        <td>8:00 am</td>
+        <td>11:00 am</td>
+        <td rowspan="1">physics</td>
+        
+    </tr>
+    <tr>
+        <td>1:00am</td>
+        <td>1:00am</td>
+        <td rowspan="2">XML transformatoin</td>
+    </tr>
+    <tr>
+        <td>12:00pm</td>
+        <td>12:00pm</td>
+    
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td>8:00 am</td>
+        <td>5:00 am</td>
+        <td>Mathmatics</td>
+    </tr>
+</table>
+<p>some icons</p>
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i> -->
+
+<div class="card">
+    <div class="contain">
+         <div class="front">Front</div>
+         <div class="back">Back!</div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
