@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="bus.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -15,20 +16,52 @@
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact">login</a>
+      <a href="#products">Products</a>
+      <a href="#suppoter">supporters</a>
+      <a href="#contact" id="loginbtn">login</a>
+
     </nav>
+    <div id="loginForm">
+      <!-- Login Form -->
+      <form class="form">
+        <p id="heading">Login</p>
+        <div class="field">
+        <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" class="input-icon">
+        <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
+        </svg>
+          <input type="text" class="input-field" placeholder="Username" autocomplete="off">
+        </div>
+        <div class="field">
+        <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" class="input-icon">
+        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+        </svg>
+          <input type="password" class="input-field" placeholder="Password">
+        </div>
+        <div class="btn">
+        <button class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <button class="button2">Sign Up</button>
+        </div>
+        <button class="button3">Forgot Password</button>
+    </form>
+    </div>
   </header>
+
   <!-- main section start -->
   <main id="main">
+
     <div>
       <div class="wave"></div>
       <div class="wave"></div>
       <div class="wave"></div>
     </div>
 
-    <section style="margin-top: -13px;padding-top: -17px; margin-bottom: 150px;">
+
+    
+    <section style="margin-top: -13px;padding-top: -17px; margin-bottom: 150px; ">
+   
+     
       <div class="main">
+        
         <h1>WELCOME TO MY BUSINISS <div class="roller">
             <span id="rolltext" class="text-primary ">TRAVELING<br />
               CUSTOMER FAITH<br />
@@ -53,7 +86,7 @@
     </section>
     <!-- other section start -->
 
-    <section id="services" style="background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);">
+    <section id="services" style="background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%); position: relative;">
       <h1>Our Services</h1>
       <div id="services_div1">
 
@@ -100,7 +133,7 @@
 
     </section>
     <!-- section of about -->
-    <section id="about">
+    <section id="about"  >
       <div class="about_area">
         <div class="containers">
           <div class="row">
@@ -160,7 +193,6 @@
       <div class="product">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn8EkpWnzYxf-5mTTKJdOZF6bJbX0lSAHvqA&usqp=CAU"
           alt="product 4">
-        <!-- <img src="data:image/jpeg;base64,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" alt="Product 3"> -->
         <h3>Product 3</h3>
         <p>A brief description of the product goes here.</p>
         <a href="#">Learn More</a>
@@ -340,6 +372,7 @@
 
 
     <!-- footer sectioin  -->
+
     <footer>
       <div class="container">
         <div class="row">
@@ -380,10 +413,8 @@
     </footer>
     
 
-
-    
   </main>
-
+<script src="busni.js"></script>
 </body>
 
 </html>
