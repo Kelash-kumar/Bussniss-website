@@ -1,5 +1,8 @@
 // let btn=document.getElementById("loginForm");
-
+document.getElementById("main").addEventListener('click',function(){
+  loginForm.style.display="none";
+  
+})
 const loginForm = document.getElementById("loginForm");
 window.onload=()=>{
     loginForm.style.display="none";
@@ -13,7 +16,4 @@ loginbtn.onclick = function () {
   }
 };
 
-// loginbtn.addEventListener('click',function(){
-// // loginbtn.style.display="block";
-// loginbtn.style.backgroundColor="red";
-// })
+
